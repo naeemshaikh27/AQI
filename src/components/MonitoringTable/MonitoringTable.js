@@ -4,7 +4,7 @@ import { w3cwebsocket as W3CWebSocket } from "websocket";
 import moment from 'moment';
 import LiveChart from '../LiveChart/LiveChart';
 
-const client = new W3CWebSocket('ws://city-ws.herokuapp.com');
+const client = new W3CWebSocket('wss://city-ws.herokuapp.com');
 
 export default class MonitoringTable extends React.Component {
     state = { aqi: [], chartData: null, historicalCityAqis: {} }
